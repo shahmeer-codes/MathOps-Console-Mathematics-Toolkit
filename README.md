@@ -224,7 +224,7 @@ Install the **.NET 8 SDK** or a compatible .NET SDK.
 ### Clone
 
 ```bash
-git clone https://github.com/your-username/MathOps.git
+git clone https://github.com/your-username/MathOps-Console-Mathematics-Toolkit
 ```
 
 ### Navigate
