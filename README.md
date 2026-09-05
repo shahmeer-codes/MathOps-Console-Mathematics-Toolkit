@@ -1,4 +1,4 @@
-# MathOps-Console-Mathematics-Toolkit
+# MathOps
 
 A console-based mathematics toolkit built with C# and .NET.
 
@@ -31,8 +31,9 @@ MathOps provides a collection of common mathematical operations through a simple
   * Base-10 logarithm
 * Interactive menu
 * Continuous operation using a `do-while` loop
-* Basic input validation
+* Input validation
 * Division-by-zero protection
+* Separated application flow and mathematical operations
 
 ## Technologies
 
@@ -46,31 +47,65 @@ MathOps provides a collection of common mathematical operations through a simple
 ```text
 MathOps/
 │
-├── Program.cs
-├── MathOps.csproj
+├── src/
+│   ├── Program.cs
+│   └── MathOperations.cs
+│
 ├── README.md
-└── .gitignore
+├── MathOps.csproj
+├── .gitignore
+└── LICENSE
 ```
+
+### Source Files
+
+**Program.cs**
+
+Handles the application entry point, console interface, menus, user input, and program flow.
+
+**MathOperations.cs**
+
+Contains the mathematical operation methods used by the application.
 
 ## Getting Started
 
-### Clone the repository
+### Prerequisites
+
+Make sure you have the .NET 8 SDK installed on your system.
+
+### Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/MathOps.git
 ```
 
-### Navigate to the project
+### Navigate to the Project
 
 ```bash
 cd MathOps
 ```
 
-### Run the application
+### Run the Application
 
 ```bash
 dotnet run
 ```
+
+## Available Operations
+
+| Operation         | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| Basic Arithmetic  | Addition, subtraction, multiplication, and division |
+| Square Root       | Calculates the square root of a number              |
+| Minimum / Maximum | Finds the smaller or larger of two numbers          |
+| Power             | Raises a number to a given exponent                 |
+| Absolute Value    | Returns the absolute value of a number              |
+| Remainder         | Calculates the remainder between two numbers        |
+| Rounding          | Rounds a number to specified decimal places         |
+| Ceiling           | Rounds a number upward                              |
+| Floor             | Rounds a number downward                            |
+| Trigonometry      | Calculates sine, cosine, and tangent                |
+| Logarithm         | Calculates natural and base-10 logarithms           |
 
 ## Example
 
@@ -93,21 +128,36 @@ dotnet run
 Enter your choice:
 ```
 
-## Purpose
+## Concepts Practiced
 
-MathOps was created as a C# console project to practice fundamental programming concepts including:
+This project was created to practice fundamental C# and programming concepts, including:
 
 * Variables and data types
 * User input
+* Type conversion
 * Conditional statements
 * Switch statements
-* Loops
-* Methods from the `Math` class
-* Type conversion
+* `do-while` loops
+* Static classes and methods
+* Method calls
+* The `Math` class
 * Input validation
-* Console-based application design
+* Exception-safe operation handling
+* Console application design
+* Basic code organization
+
+## Future Improvements
+
+Possible improvements for future versions include:
+
+* Better input validation
+* Exception handling for invalid numeric input
+* Additional mathematical operations
+* Calculation history
+* More advanced scientific functions
+* Unit testing
+* Improved console interface
 
 ## License
 
-This project is available for learning and educational purposes.
-
+This project is licensed under the MIT License.
